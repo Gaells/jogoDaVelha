@@ -21,16 +21,13 @@ Um jogo da velha (tic-tac-toe) interativo desenvolvido com React Native, TypeScr
 <div align="center">
   <img src="./assets/screenshots/tela-inicial.png" alt="Tela Inicial" width="250"/>
   <img src="./assets/screenshots/vitoria.png" alt="Tela de Vitória" width="250"/>
+  <img src="./assets/screenshots/configuracao-ia.png" alt="Configuração da IA" width="250"/>
 </div>
 
 <div align="center">
   <img src="./assets/screenshots/derrota.png" alt="Tela de Derrota" width="250"/>
   <img src="./assets/screenshots/empate.png" alt="Tela de Empate" width="250"/>
   <img src="./assets/screenshots/seletor-idiomas.png" alt="Seletor de Idiomas" width="250"/>
-</div>
-
-<div align="center">
-  <img src="./assets/screenshots/configuracao-ia.png" alt="Configuração da IA" width="250"/>
 </div>
 
 ## 🌍 Idiomas Suportados
