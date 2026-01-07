@@ -1,36 +1,36 @@
-# 🎮 Jogo da Velha - React Native
+# 🎮 Tic-Tac-Toe - React Native
 
-Um jogo da velha (tic-tac-toe) interativo desenvolvido com React Native, TypeScript e Expo, com suporte a **8 idiomas** e **IA inteligente**.
+An interactive tic-tac-toe game built with React Native, TypeScript and Expo, featuring **8 languages support** and **intelligent AI**.
 
-## 📋 Características
+## 📋 Features
 
-- ✅ Interface intuitiva e responsiva
-- ✅ **Suporte a 8 idiomas (i18n)**
-- ✅ **IA com 3 níveis de dificuldade**
-- ✅ **Modo Jogador vs Jogador e Jogador vs IA**
-- ✅ Sistema de pontuação persistente
-- ✅ Destaque visual das células vencedoras
-- ✅ Detecção automática de vitória e empate
-- ✅ Alternância automática entre jogadores
-- ✅ **Preferência de idioma salva localmente**
-- ✅ TypeScript para type safety
-- ✅ Componentização modular
+- ✅ Intuitive and responsive interface
+- ✅ **Support for 8 languages (i18n)**
+- ✅ **AI with 3 difficulty levels**
+- ✅ **Player vs Player and Player vs AI modes**
+- ✅ Persistent scoring system
+- ✅ Visual highlight of winning cells
+- ✅ Automatic win and draw detection
+- ✅ Automatic player turn switching
+- ✅ **Locally saved language preference**
+- ✅ TypeScript for type safety
+- ✅ Modular componentization
 
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="./assets/screenshots/tela-inicial.png" alt="Tela Inicial" width="250"/>
-  <img src="./assets/screenshots/vitoria.png" alt="Tela de Vitória" width="250"/>
-  <img src="./assets/screenshots/configuracao-ia.png" alt="Configuração da IA" width="250"/>
+  <img src="./assets/screenshots/tela-inicial.png" alt="Initial Screen" width="250"/>
+  <img src="./assets/screenshots/vitoria.png" alt="Victory Screen" width="250"/>
+  <img src="./assets/screenshots/configuracao-ia.png" alt="AI Configuration" width="250"/>
 </div>
 
 <div align="center">
-  <img src="./assets/screenshots/derrota.png" alt="Tela de Derrota" width="250"/>
-  <img src="./assets/screenshots/empate.png" alt="Tela de Empate" width="250"/>
-  <img src="./assets/screenshots/seletor-idiomas.png" alt="Seletor de Idiomas" width="250"/>
+  <img src="./assets/screenshots/derrota.png" alt="Defeat Screen" width="250"/>
+  <img src="./assets/screenshots/empate.png" alt="Draw Screen" width="250"/>
+  <img src="./assets/screenshots/seletor-idiomas.png" alt="Language Selector" width="250"/>
 </div>
 
-## 🌍 Idiomas Suportados
+## 🌍 Supported Languages
 
 - 🇧🇷 **Português** (pt-BR)
 - 🇺🇸 **English** (en-US)
@@ -41,72 +41,72 @@ Um jogo da velha (tic-tac-toe) interativo desenvolvido com React Native, TypeScr
 - 🇯🇵 **日本語** (ja-JP)
 - 🇨🇳 **中文** (zh-CN)
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-- **React Native** - Framework para desenvolvimento mobile
-- **TypeScript** - Tipagem estática
-- **Expo** - Plataforma de desenvolvimento
-- **React Hooks** - Gerenciamento de estado
-- **Context API** - Gerenciamento de idioma global
-- **AsyncStorage** - Persistência de preferências
-- **Algoritmo Minimax** - IA avançada para modo difícil
+- **React Native** - Mobile development framework
+- **TypeScript** - Static typing
+- **Expo** - Development platform
+- **React Hooks** - State management
+- **Context API** - Global language management
+- **AsyncStorage** - Preferences persistence
+- **Minimax Algorithm** - Advanced AI for hard mode
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 jogoDaVelha/
-├── components/          # Componentes reutilizáveis
-│   ├── Board.tsx       # Tabuleiro do jogo
-│   ├── Cell.tsx        # Célula individual
-│   ├── LanguageSelector.tsx # Seletor de idiomas
-│   └── GameModeSettings.tsx # Configurações de modo e dificuldade
-├── contexts/           # Contextos React
-│   └── LanguageContext.tsx  # Gerenciamento de idioma
-├── locales/            # Arquivos de tradução
-│   ├── pt-BR.ts        # Português Brasil
+├── components/          # Reusable components
+│   ├── Board.tsx       # Game board
+│   ├── Cell.tsx        # Individual cell
+│   ├── LanguageSelector.tsx # Language selector
+│   └── GameModeSettings.tsx # Mode and difficulty settings
+├── contexts/           # React contexts
+│   └── LanguageContext.tsx  # Language management
+├── locales/            # Translation files
+│   ├── pt-BR.ts        # Portuguese (Brazil)
 │   ├── en-US.ts        # English
-│   ├── es-ES.ts        # Español
-│   ├── fr-FR.ts        # Français
-│   ├── de-DE.ts        # Deutsch
-│   ├── it-IT.ts        # Italiano
-│   ├── ja-JP.ts        # 日本語
-│   ├── zh-CN.ts        # 中文
-│   └── index.ts        # Exportação e configuração
-├── types/              # Definições de tipos TypeScript
-│   └── index.ts        # Tipos do jogo e idiomas
-├── utils/              # Funções auxiliares
-│   ├── gameLogic.ts    # Lógica do jogo
-│   └── aiLogic.ts      # Algoritmos de IA
-├── .github/            # Configurações do GitHub
+│   ├── es-ES.ts        # Spanish
+│   ├── fr-FR.ts        # French
+│   ├── de-DE.ts        # German
+│   ├── it-IT.ts        # Italian
+│   ├── ja-JP.ts        # Japanese
+│   ├── zh-CN.ts        # Chinese (Simplified)
+│   └── index.ts        # Export and configuration
+├── types/              # TypeScript type definitions
+│   └── index.ts        # Game and language types
+├── utils/              # Helper functions
+│   ├── gameLogic.ts    # Game logic
+│   └── aiLogic.ts      # AI algorithms
+├── .github/            # GitHub configurations
 │   └── copilot-instructions.md
-├── App.tsx             # Componente principal
-└── package.json        # Dependências do projeto
+├── App.tsx             # Main component
+└── package.json        # Project dependencies
 ```
 
-## 🎯 Como Usar
+## 🎯 How to Use
 
-### Pré-requisitos
+### Prerequisites
 
-- Node.js (v16 ou superior)
-- npm ou yarn
-- Expo Go app no seu dispositivo móvel (opcional)
+- Node.js (v16 or higher)
+- npm or yarn
+- Expo Go app on your mobile device (optional)
 
-### Instalação
+### Installation
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone <url-do-repositorio>
+git clone <repository-url>
 cd jogoDaVelha
 ```
 
-2. Instale as dependências:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-### Executando o Projeto
+### Running the Project
 
-#### Desenvolvimento Local
+#### Local Development
 ```bash
 npm start
 ```
@@ -116,7 +116,7 @@ npm start
 npm run android
 ```
 
-#### iOS (requer macOS)
+#### iOS (requires macOS)
 ```bash
 npm run ios
 ```
@@ -126,72 +126,72 @@ npm run ios
 npm run web
 ```
 
-## 🎮 Como Jogar
+## 🎮 How to Play
 
-### Modo Jogador vs Jogador (👥)
-1. O jogo começa com o jogador **X**
-2. Toque no ícone 👥 no canto superior esquerdo para alternar entre modos
-3. Toque em uma célula vazia para fazer sua jogada
-4. Os jogadores alternam entre **X** e **O**
+### Player vs Player Mode (👥)
+1. The game starts with player **X**
+2. Tap the 👥 icon in the top left corner to switch between modes
+3. Tap an empty cell to make your move
+4. Players alternate between **X** and **O**
 
-### Modo Jogador vs IA (🤖)
-1. Toque no ícone do modo (canto superior esquerdo)
-2. Selecione **"Jogador vs IA"**
-3. Escolha o nível de dificuldade:
-   - **😊 Fácil** - IA faz jogadas aleatórias (ótimo para iniciantes)
-   - **🤔 Médio** - IA bloqueia vitórias e tenta vencer (desafiador)
-   - **😈 Difícil** - IA usa algoritmo Minimax (quase impossível de vencer!)
-4. Você sempre joga como **X** (primeiro)
-5. A IA joga como **O**
+### Player vs AI Mode (🤖)
+1. Tap the mode icon (top left corner)
+2. Select **"Player vs AI"**
+3. Choose the difficulty level:
+   - **😊 Easy** - AI makes random moves (great for beginners)
+   - **🤔 Medium** - AI blocks wins and tries to win (challenging)
+   - **😈 Hard** - AI uses Minimax algorithm (nearly impossible to beat!)
+4. You always play as **X** (first)
+5. AI plays as **O**
 
-### Recursos Gerais
-- Toque no ícone 🌐 para **mudar o idioma**
-- Use **"Nova Partida"** para começar um novo jogo
-- Use **"Zerar Placares"** para resetar as pontuações
-- O primeiro a completar uma linha, coluna ou diagonal vence
-- Se todas as células forem preenchidas sem vencedor, é empate
+### General Features
+- Tap the 🌐 icon to **change language**
+- Use **"New Game"** to start a new game
+- Use **"Reset Scores"** to reset the scores
+- The first to complete a row, column, or diagonal wins
+- If all cells are filled without a winner, it's a draw
 
-## 🏗️ Componentes
+## 🏗️ Components
 
 ### Board
-Gerencia o tabuleiro 3x3 e renderiza as células do jogo.
+Manages the 3x3 board and renders game cells.
 
 ### Cell
-Representa uma célula individual do tabuleiro com:
-- Estados visuais diferentes para X e O
-- Destaque para células vencedoras
-- Desabilitação após jogada
+Represents an individual board cell with:
+- Different visual states for X and O
+- Highlight for winning cells
+- Disabled after move
 
 ### ScoreBoard
-Exibe a pontuação de ambos os jogadores e empates, traduzida no idioma selecionado.
+Displays the score of both players and draws, translated in the selected language.
 
 ### LanguageSelector
-Modal para seleção de idioma com:
-- Lista de 8 idiomas disponíveis
-- Bandeiras para identificação visual
-- Indicador do idioma atual
-- Persistência da preferência
+Modal for language selection with:
+- List of 8 available languages
+- Flags for visual identification
+- Current language indicator
+- Preference persistence
 
 ### GameModeSettings
-Modal para configuração do jogo com:
-- Seleção entre modo PvP e PvAI
-- Escolha de nível de dificuldade da IA
-- Interface intuitiva com emojis
-- Confirmação visual das seleções
+Modal for game configuration with:
+- Selection between PvP and PvAI modes
+- AI difficulty level choice
+- Intuitive interface with emojis
+- Visual confirmation of selections
 
-## 🤖 Sistema de Inteligência Artificial
+## 🤖 Artificial Intelligence System
 
-### Algoritmos Implementados
+### Implemented Algorithms
 
-#### 1. IA Fácil (😊)
-**Estratégia**: Jogadas completamente aleatórias
-- Escolhe aleatoriamente entre as posições disponíveis
-- Não considera estratégia ou bloqueios
-- Ideal para iniciantes e crianças
-- Taxa de vitória do jogador: ~80-90%
+#### 1. Easy AI (😊)
+**Strategy**: Completely random moves
+- Randomly chooses from available positions
+- Does not consider strategy or blocks
+- Ideal for beginners and children
+- Player win rate: ~80-90%
 
 ```typescript
-// Seleciona uma posição aleatória disponível
+// Selects a random available position
 export const easyAI = (board: Board): number => {
   const availableMoves = board
     .map((cell, index) => (cell === null ? index : null))
@@ -200,41 +200,41 @@ export const easyAI = (board: Board): number => {
 };
 ```
 
-#### 2. IA Média (🤔)
-**Estratégia**: Jogo defensivo e oportunista
-- **Prioridade 1**: Vencer se houver oportunidade
-- **Prioridade 2**: Bloquear vitória iminente do oponente
-- **Prioridade 3**: Ocupar o centro se disponível
-- **Prioridade 4**: Ocupar cantos estratégicos
-- **Prioridade 5**: Qualquer posição disponível
-- Taxa de vitória do jogador: ~40-60%
+#### 2. Medium AI (🤔)
+**Strategy**: Defensive and opportunistic play
+- **Priority 1**: Win if there's an opportunity
+- **Priority 2**: Block opponent's imminent victory
+- **Priority 3**: Occupy center if available
+- **Priority 4**: Occupy strategic corners
+- **Priority 5**: Any available position
+- Player win rate: ~40-60%
 
 ```typescript
 export const mediumAI = (board: Board, aiPlayer: Player): number => {
-  // 1. Tentar vencer
+  // 1. Try to win
   const winningMove = findWinningMove(board, aiPlayer);
   if (winningMove !== -1) return winningMove;
 
-  // 2. Bloquear oponente
+  // 2. Block opponent
   const blockingMove = findWinningMove(board, opponent);
   if (blockingMove !== -1) return blockingMove;
 
-  // 3. Centro > Cantos > Bordas
+  // 3. Center > Corners > Edges
   // ...
 };
 ```
 
-#### 3. IA Difícil (😈)
-**Estratégia**: Algoritmo Minimax (Jogo Perfeito)
-- Implementa o algoritmo Minimax clássico
-- Avalia todas as possibilidades futuras
-- Escolhe sempre a melhor jogada possível
-- **Impossível de vencer** (apenas empate ou derrota)
-- Profundidade adaptativa para otimização
-- Taxa de vitória do jogador: ~0-5% (somente por erro da IA ou jogada perfeita)
+#### 3. Hard AI (😈)
+**Strategy**: Minimax Algorithm (Perfect Play)
+- Implements the classic Minimax algorithm
+- Evaluates all future possibilities
+- Always chooses the best possible move
+- **Impossible to beat** (only draw or defeat)
+- Adaptive depth for optimization
+- Player win rate: ~0-5% (only by AI error or perfect play)
 
 ```typescript
-// Minimax: avalia recursivamente todas as jogadas possíveis
+// Minimax: recursively evaluates all possible moves
 const minimax = (
   board: Board,
   depth: number,
@@ -242,51 +242,51 @@ const minimax = (
   aiPlayer: Player,
   opponent: Player
 ): number => {
-  // Verifica condições de término (vitória, derrota, empate)
-  // Retorna pontuação ajustada pela profundidade
-  // Maximiza para IA, minimiza para oponente
-  // Retorna melhor jogada encontrada
+  // Checks for terminal conditions (win, loss, draw)
+  // Returns score adjusted by depth
+  // Maximizes for AI, minimizes for opponent
+  // Returns best move found
 };
 ```
 
-### Características Técnicas
+### Technical Features
 
-- **Delay inteligente**: IA "pensa" por 300ms-800ms para melhor UX
-- **Indicador visual**: Mostra "IA pensando..." durante processamento
-- **Bloqueio de interação**: Previne jogadas durante turno da IA
-- **Otimização de performance**: Minimax com poda de profundidade
-- **Jogadas instantâneas**: Mesmo em modo difícil, resposta < 1s
+- **Smart delay**: AI "thinks" for 300ms-800ms for better UX
+- **Visual indicator**: Shows "AI thinking..." during processing
+- **Interaction blocking**: Prevents moves during AI's turn
+- **Performance optimization**: Minimax with depth pruning
+- **Instant moves**: Even in hard mode, response < 1s
 
-### Detalhes do Minimax
+### Minimax Details
 
-O algoritmo Minimax é uma técnica de teoria dos jogos que:
+The Minimax algorithm is a game theory technique that:
 
-1. **Simula todas as jogadas possíveis** até o fim do jogo
-2. **Atribui pontuações**:
-   - +10 para vitória da IA (ajustado pela profundidade)
-   - -10 para vitória do oponente (ajustado pela profundidade)
-   - 0 para empate
-3. **Assume jogo perfeito** de ambos os lados
-4. **Escolhe o caminho** que maximiza a pontuação da IA
+1. **Simulates all possible moves** until the end of the game
+2. **Assigns scores**:
+   - +10 for AI victory (adjusted by depth)
+   - -10 for opponent victory (adjusted by depth)
+   - 0 for draw
+3. **Assumes perfect play** from both sides
+4. **Chooses the path** that maximizes AI's score
 
-**Por que é imbatível?**
-- Explora TODAS as ~362,880 possibilidades do jogo
-- Sempre escolhe a jogada que leva ao melhor resultado possível
-- No jogo da velha, com jogo perfeito, sempre termina em empate
+**Why is it unbeatable?**
+- Explores ALL ~362,880 game possibilities
+- Always chooses the move that leads to the best possible outcome
+- In tic-tac-toe, with perfect play, always ends in a draw
 
-## 🌐 Sistema de Internacionalização
+## 🌐 Internationalization System
 
-### Arquitetura i18n
+### i18n Architecture
 
-O jogo usa um sistema robusto de internacionalização baseado em:
+The game uses a robust internationalization system based on:
 
-1. **Context API** - Gerenciamento global do idioma
-2. **AsyncStorage** - Persistência da preferência do usuário
-3. **Traduções modulares** - Arquivo separado para cada idioma
+1. **Context API** - Global language management
+2. **AsyncStorage** - User preference persistence
+3. **Modular translations** - Separate file for each language
 
-### Como Adicionar um Novo Idioma
+### How to Add a New Language
 
-1. Crie um arquivo em `/locales` (ex: `locales/ru-RU.ts`):
+1. Create a file in `/locales` (e.g., `locales/ru-RU.ts`):
 ```typescript
 export default {
   title: 'Крестики-нолики',
@@ -302,34 +302,34 @@ export default {
 };
 ```
 
-2. Importe e adicione em `locales/index.ts`:
-- **Nunca usar textos hardcoded - sempre usar sistema de tradução**
-- **Usar `useLanguage()` hook para acessar traduções**
+2. Import and add in `locales/index.ts`:
+- **Never use hardcoded text - always use translation system**
+- **Use `useLanguage()` hook to access translations**
 ```typescript
 import ruRU from './ru-RU';
 
 export const translations = {
-  // ... outros idiomas
+  // ... other languages
   'ru-RU': ruRU,
 };
 
 export const AVAILABLE_LANGUAGES = [
-  // ... outros idiomas
+  // ... other languages
   { code: 'ru-RU', name: 'Русский', flag: '🇷🇺' },
 ];
 ```
 
-3. Atualize o tipo em `types/index.ts`:
+3. Update the type in `types/index.ts`:
 ```typescript
 export type SupportedLanguage = 'pt-BR' | 'en-US' | ... | 'ru-RU';
 ```
 
-### Uso no Código
+### Usage in Code
 
 ```typescript
 import { useLanguage } from './contexts/LanguageContext';
 
-function MeuComponente() {
+function MyComponent() {
   const { t, language, setLanguage } = useLanguage();
   
   return (
@@ -337,28 +337,14 @@ function MeuComponente() {
   );
 }
 ```
-## 🏗️ Componentes
+## 🧩 Game Logic
 
-### Board
-Gerencia o tabuleiro 3x3 e renderiza as células do jogo.
+### Main Functions (utils/gameLogic.ts)
 
-### Cell
-Representa uma célula individual do tabuleiro com:
-- Estados visuais diferentes para X e O
-- Destaque para células vencedoras
-- Desabilitação após jogada
-
-### ScoreBoard
-Exibe a pontuação de ambos os jogadores e empates.
-
-## 🧩 Lógica do Jogo
-
-### Funções Principais (utils/gameLogic.ts)
-
-- `checkWinner()` - Verifica se há um vencedor
-- `checkDraw()` - Verifica se o jogo terminou em empate
-- `createEmptyBoard()` - Cria um novo tabuleiro vazio
-- `togglePlayer()` - Alterna entre os jogadores
+- `checkWinner()` - Checks if there's a winner
+- `checkDraw()` - Checks if the game ended in a draw
+- `createEmptyBoard()` - Creates a new empty board
+- `togglePlayer()` - Toggles between players
 
 ## 🎨 Personalização
 
@@ -374,25 +360,39 @@ Você pode personalizar cores e estilos editando os arquivos:
 - Funções auxiliares em camelCase
 - Todas as props e estados tipados
 - Interfaces para tipos customizados
-- Comentários em português para documentação
+- ComeCustomization
 
-## 🤝 Contribuindo
+You can customize colors and styles by editing the files:
+- [App.tsx](App.tsx) - Main styles
+- [components/Cell.tsx](components/Cell.tsx) - Cell styles
+- [components/ScoreBoard.tsx](components/ScoreBoard.tsx) - Scoreboard styles
 
-Contribuições são bem-vindas! Sinta-se à vontade para:
-1. Fazer fork do projeto
-2. Criar uma branch para sua feature
-3. Commit suas mudanças
-4. Push para a branch
-5. Abrir um Pull Request
+## 📝 Code Conventions
 
-## 📄 Licença
+- Functional components with Hooks
+- Component names in PascalCase
+- Helper functions in camelCase
+- All props and states typed
+- Interfaces for custom types
+- Comments for documentation
 
-Este projeto é de código aberto e está disponível sob a licença MIT.
+## 🤝 Contributing
 
-## 👤 Autor
+Contributions are welcome! Feel free to:
+1. Fork the project
+2. Create a branch for your feature
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-Desenvolvido com ❤️ usando React Native e Expo
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+Built with ❤️ using React Native and Expo
 
 ---
 
-**Divirta-se jogando! 🎉**
+**Have fun playing
